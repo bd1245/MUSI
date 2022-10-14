@@ -23,7 +23,7 @@ async def song(client, message: Message):
     if not urlissed:
         await client.send_message(
             message.chat.id,
-            "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️.",
+            "-› يرجى اعطاء اسم الاغنية او راجع الاوامر لمعرفة استخدامي ⚡️.",
         )
         return
     pablo = await client.send_message(
@@ -241,8 +241,8 @@ async def vsong(client, message: Message):
         message.chat.id, f"** اسم الاغنية ⚡️ :** `{urlissed}`"
     )
     if not urlissed:
-        await pablo.edit(
-            "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+        await pablo.edit
+            "-› يرجى اعطاء اسم الاغنية او راجع الاوامر لمعرفة استخدامي ⚡️."
         )
         return
 
@@ -278,8 +278,8 @@ async def vsong(client, message: Message):
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
-** الاسم ⚡️:** [{thum}]({mo})
-** طلب بواسطة ⚡️:** {message.from_user.mention}
+** ❤️ الاسم :** [{thum}]({mo})
+** ❤️ طلب بواسطة :** {message.from_user.mention}
 """
     await client.send_video(
         message.chat.id,
@@ -293,7 +293,7 @@ async def vsong(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"** اسم الاغنيه ⚡️ :** `{urlissed}`",
+            f"** ❤️ اسم الاغنيه :** `{urlissed}`",
             file_stark,
         ),
     )
