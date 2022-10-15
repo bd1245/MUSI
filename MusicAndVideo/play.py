@@ -382,7 +382,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "الصوت", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/9fd0a28073d92e3052fe3.jpg",
+                        photo="https://telegra.ph/file/6eca9cfc183ca693f1e08.jpg",
                         caption=f"""
 **تمت اضافتها الى قائمة الانتظار {chat}
 الاسم: [{songname}]({link})
@@ -419,4 +419,4 @@ async def playlist(client, m: Message):
                 QUE = QUE + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`\n"
             await m.reply(QUE, disable_web_page_preview=True)
     else:
-        await m.reply("**لايوجد شئ يشتغل حب ⚡.**")
+        await m.reply("**مفيش حاجه شغاله يحب ⚡.**")
