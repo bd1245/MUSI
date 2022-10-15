@@ -23,11 +23,11 @@ AMBILFOTO = [
     "https://telegra.ph/file/6eca9cfc183ca693f1e08.jpg",
     "https://telegra.ph/file/74570afd87b13c3bda648.jpg",
     "https://telegra.ph/file/9f44ba6059147d54c2920.jpg",
-    "https://te.legra.ph/file/a282c460a7f98aedbe956.jpg",
-    "https://te.legra.ph/file/478f9fa85efb2740f2544.jpg",
-    "https://te.legra.ph/file/cd5c96a3c7e8ae1913ef3.jpg",
-    "https://te.legra.ph/file/1cc6513411578cafda022.jpg",
-    "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
+    "https://telegra.ph/file/a7ba4a0bc4acf0ac96513.jpg",
+    "https://telegra.ph/file/25ce8011e0bbde17ca490.jpg",
+    "https://telegra.ph/file/48eacd5df5f180fb4e32d.jpg",
+    "https://telegra.ph/file/a653c7dcfc7d107a49ff4.jpg",
+    "https://telegra.ph/file/00f8c8273190224bbe991.jpg",
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -125,7 +125,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
+                    photo="https://telegra.ph/file/99f71850ec11bda779a5f.jpg",
                     caption=f"""
 تمت اضافتها الى قائمة الانتظار {pos}
 الاسم: [{songname}]({link})
@@ -145,7 +145,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/2a9253adaf3121c6645b7.jpg",
+                    photo="https://telegra.ph/file/4b1ed42a6033821caeaee.jpg",
                     caption=f"""
 الحالة: تم التشغيل بنجاح ⚡️
 الاسم: [{songname}]({link})
@@ -157,7 +157,7 @@ async def play(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+                "-› يرجى اعطاء اسم الاغنية او راجع الاوامر لمعرفة استخدامي ⚡️."
             )
         else:
             await m.delete()
