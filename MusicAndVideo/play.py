@@ -113,7 +113,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["شغل"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["شغل", "تشغيل"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -136,7 +136,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
+                    photo="https://telegra.ph/file/99f71850ec11bda779a5f.jpg",
                     caption=f"""
 تمت اضافتها الى قائمة الانتظار {pos}
 الاسم: [{songname}]({link})
@@ -156,7 +156,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/2a9253adaf3121c6645b7.jpg",
+                    photo="https://telegra.ph/file/4b1ed42a6033821caeaee.jpg",
                     caption=f"""
 الحالة: تم التشغيل بنجاح ⚡️
 الاسم: [{songname}]({link})
