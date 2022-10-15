@@ -17,8 +17,8 @@ from config import HNDLR, bot, call_py
 from MusicAndVideo.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
-    "https://telegra.ph/file/2a9253adaf3121c6645b7.jpg",
+    "https://telegra.ph/file/99f71850ec11bda779a5f.jpg",
+    "https://telegra.ph/file/4b1ed42a6033821caeaee.jpg",
     "https://telegra.ph/file/54383f9f564ed99c03a4b.jpg",
     "https://telegra.ph/file/6eca9cfc183ca693f1e08.jpg",
     "https://te.legra.ph/file/430dcf25456f2bb38109f.jpg",
