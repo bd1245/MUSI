@@ -23,7 +23,7 @@ async def song(client, message: Message):
     if not urlissed:
         await client.send_message(
             message.chat.id,
-            "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️.",
+            "-› يرجى اعطاء اسم الاغنية او راجع الاوامر لمعرفة استخدامي ⚡️.",
         )
         return
     pablo = await client.send_message(
@@ -242,7 +242,7 @@ async def vsong(client, message: Message):
     )
     if not urlissed:
         await pablo.edit(
-            "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+            "-› يرجى اعطاء اسم الاغنية او راجع الاوامر لمعرفة استخدامي ⚡️."
         )
         return
 
