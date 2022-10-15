@@ -244,7 +244,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/54699e9f531dfac087926.jpg",
+                    photo="https://telegra.ph/file/54383f9f564ed99c03a4b.jpg",
                     caption=f"""
 **تمت اضافتها الى قائمة الانتظار{pos}
 الاسم: [{songname}]({link})
