@@ -88,5 +88,7 @@ async def help(client, m: Message):
 • !تخطي - لتخطي المقطع الصوتي أو الفيديو الحالي وتشغيل ما بعده
 
 • !انهاء - لإنهاء التشغيل</b>
-"By: @"""
+"By: @kyany_el5as
+ DEV:  @WELS0N
+  DEV:  @"""
     await m.reply(HELP)
