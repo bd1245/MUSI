@@ -168,7 +168,7 @@ async def play(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+                "-› يرجى اعطاء اسم الاغنية او راجع الاوامر لمعرفة استخدامي ⚡️."
             )
         else:
             await m.delete()
@@ -255,7 +255,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/54699e9f531dfac087926.jpg",
+                    photo="https://telegra.ph/file/54383f9f564ed99c03a4b.jpg",
                     caption=f"""
 **تمت اضافتها الى قائمة الانتظار{pos}
 الاسم: [{songname}]({link})
@@ -279,7 +279,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/54699e9f531dfac087926.jpg",
+                    photo="https://telegra.ph/file/6eca9cfc183ca693f1e08.jpg",
                     caption=f"""
 **الحالة: تم التشغيل بنجاح ⚡️
 الاسم: [{songname}]({link})
