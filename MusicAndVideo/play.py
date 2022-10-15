@@ -17,17 +17,28 @@ from config import HNDLR, bot, call_py
 from MusicAndVideo.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
-    "https://telegra.ph/file/2a9253adaf3121c6645b7.jpg",
-    "https://telegra.ph/file/54699e9f531dfac087926.jpg",
-    "https://telegra.ph/file/323fe9899b992f68d8d41.jpg",
-    "https://te.legra.ph/file/430dcf25456f2bb38109f.jpg",
-    "https://te.legra.ph/file/c74686f70a1b918060b8e.jpg",
-    "https://te.legra.ph/file/a282c460a7f98aedbe956.jpg",
-    "https://te.legra.ph/file/478f9fa85efb2740f2544.jpg",
-    "https://te.legra.ph/file/cd5c96a3c7e8ae1913ef3.jpg",
-    "https://te.legra.ph/file/1cc6513411578cafda022.jpg",
-    "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
+    "https://telegra.ph/file/99f71850ec11bda779a5f.jpg",
+
+    "https://telegra.ph/file/4b1ed42a6033821caeaee.jpg",
+
+    "https://telegra.ph/file/54383f9f564ed99c03a4b.jpg",
+
+    "https://telegra.ph/file/6eca9cfc183ca693f1e08.jpg",
+
+    "https://telegra.ph/file/74570afd87b13c3bda648.jpg",
+
+    "https://telegra.ph/file/9f44ba6059147d54c2920.jpg",
+
+    "https://telegra.ph/file/121aed8b31d41927b4cba.jpg",
+
+    "https://telegra.ph/file/bd5d5ef6d65245c5d239a.jpg",
+
+    "https://telegra.ph/file/74570afd87b13c3bda648.jpg",
+
+    "https://telegra.ph/file/99df8bd1e9d3fc2205ccf.jpg",
+
+    "https://telegra.ph/file/a7840fbe87c6bfea1d9e3.jpg",
+
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -102,7 +113,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["تشغيل"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["شغل"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
