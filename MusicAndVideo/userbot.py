@@ -30,22 +30,22 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(filters.command(["بنك"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["بنج"], prefixes=f"{HNDLR}"))
 async def ping(client, m: Message):
     await m.delete()
     start = time()
     current_time = datetime.utcnow()
-    m_reply = await m.reply_text("جاري حساب سرعه البنك ⚡️ ")
+    m_reply = await m.reply_text("جاري حساب سرعه البنج ⚡️ ")
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
-        f"<b>-›  بنك</b> `{delta_ping * 1000:.3f} ms` \n<b>-›  الوقت</b> - `{uptime}`"
+        f"<b>-›  بنج</b> `{delta_ping * 1000:.3f} ms` \n<b>-›  الوقت</b> - `{uptime}`"
     )
 
 
 @Client.on_message(
-    filters.user(SUDO_USERS) & filters.command(["اعادة تشغيل"], prefixes=f"{HNDLR}")
+    filters.user(SUDO_USERS) & filters.command(["تحديث"], prefixes=f"{HNDLR}")
 )
 async def restart(client, m: Message):
     await m.delete()
@@ -58,7 +58,7 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**-عزيزي المطور تم اعادة التشغيل ⚡️**")
+    await loli.edit("**-عزيزي المطور تم التحديث ⚡️**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -67,16 +67,16 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>اهلا بك صديقي  🥇 {m.from_user.mention}!
+<b>منور يخويا  ❤️ {m.from_user.mention}!
 
-🛠 هذه هي قائمـة اوامر سـورس كرستين
+🛠 هذه هي قائمـة اوامر سـورس ويلسون و الدوله
 - أوامر المستخدمين: 
 • !تشغيل [عنوان المطقع | رابط يوتيوب | الرد على ملف مقطع صوتي] - لتشغيل مقطع صوتي في المكالمه
 
 • !فيديو [عنوان الفيديو | رابط يوتيوب | الرد على الفيديو] - لتشغيل فيديو في المكالمة
 • !القائمة  - لعرض قائمة التشغيل الحالية
 
-• !بنك - لعرض سرعه النت للبوت
+• !بنج - لعرض سرعه النت للبوت
 
 • !الاوامر - لعرض اوامر سورس ميوزك كرستين
 
@@ -88,5 +88,5 @@ async def help(client, m: Message):
 • !تخطي - لتخطي المقطع الصوتي أو الفيديو الحالي وتشغيل ما بعده
 
 • !انهاء - لإنهاء التشغيل</b>
-"By: @cr_source"""
+"By: @"""
     await m.reply(HELP)
