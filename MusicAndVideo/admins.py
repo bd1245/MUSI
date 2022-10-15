@@ -15,7 +15,7 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("**لايوجد شئ يشتغل حب ⚡️.**")
+            await m.reply("**مفيش شئ يشتغل حب ⚡️.**")
         elif op == 1:
             await m.reply("لايوجد شئ في المكالمة تم ايقاف جميع الاغاني ⚡️**")
         else:
