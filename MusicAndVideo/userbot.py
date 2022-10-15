@@ -89,6 +89,6 @@ async def help(client, m: Message):
 
 • !انهاء - لإنهاء التشغيل</b>
 "By: @kyany_el5as
-DEV: @WEIS0ON
+DEV: @WEIS0N
 DEV: @EL_D_A_W_L_A"""
     await m.reply(HELP)
